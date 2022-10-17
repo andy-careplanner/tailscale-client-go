@@ -242,11 +242,11 @@ type (
 
 	ACLEntry struct {
 		Action      string   `json:"action" hujson:"Action"`
-		Ports       []string `json:"ports" hujson:"Ports"`
-		Users       []string `json:"users" hujson:"Users"`
-		Source      []string `json:"src" hujson:"Src"`
-		Destination []string `json:"dst" hujson:"Dst"`
-		Protocol    string   `json:"proto" hujson:"Proto"`
+		Ports       []string `json:"ports,omitempty" hujson:"Ports,omitempty"`
+		Users       []string `json:"users,omitempty" hujson:"Users,omitempty"`
+		Source      []string `json:"src,omitempty" hujson:"Src,omitempty"`
+		Destination []string `json:"dst,omitempty" hujson:"Dst,omitempty"`
+		Protocol    string   `json:"proto,omitempty" hujson:"Proto,omitempty"`
 	}
 
 	ACLTest struct {
