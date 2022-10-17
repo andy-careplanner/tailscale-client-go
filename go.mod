@@ -1,4 +1,4 @@
-module github.com/tailscale/tailscale-client-go
+module github.com/andy-careplanner/tailscale-client-go
 
 go 1.19
 
